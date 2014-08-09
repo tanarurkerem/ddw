@@ -2,7 +2,7 @@
 <project name="ddw" default="build">
 
   <target name="build">
-    <exec command="rm -rf www" />
-    <exec command="drush make ddw/build.make www" />
+    <exec command="rm -rf ../www" checkreturn="true" passthru="true" />
+    <exec command="drush make build.make ../www" checkreturn="true" passthru="true"/>
   </target>
 </project>
