@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ddw" default="build">
+
+  <target name="build">
+    <exec command="rm -rf www" />
+    <exec command="drush make ddw/build.make www" />
+  </target>
+</project>
