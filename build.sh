@@ -1,4 +1,2 @@
-core = 7.x
-api = 2
-
-projects[] = drupal
+rm -rf www
+drush make ddw/buil.make www
