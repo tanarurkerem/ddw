@@ -10,5 +10,6 @@ function build_drush_command() {
 }
 
 function drush_build() {
-  echo 'hello';
+  passthru('rm -rf www');
+  passthru('drush make ddw/build.make www');
 }
